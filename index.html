@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pibble SMP - A Cozy Minecraft Survival World</title>
+    <meta name="description" content="Join Pibble SMP, a friendly Minecraft server with vanilla survival, community focus, and no pay-to-win.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <img src="cute-cozy-building-smp-is-looking-for-new-members-૮-ﻌ-ა-v0-l24fv0gcyxpf1.webp" alt="Pibble Logo">
+        </div>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#join">Join</a></li>
+            <li><a href="#community">Community</a></li>
+            <li><a href="#rules">Rules</a></li>
+            <li><a href="#status">Status</a></li>
+        </ul>
+        <div class="nav-title">
+            <h1>Pibble SMP</h1>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">Welcome to Pibble SMP</h1>
+                    <p class="hero-subtitle">A cozy Minecraft survival world — join the adventure.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-emerald" onclick="copyIP()">Join Server</button>
+                        <button class="btn btn-pink" onclick="window.open('https://discord.gg/tQU3R4sSDS', '_blank')">Join Discord</button>
+                    </div>
+                </div>
+                <div class="hero-particles"></div>
+                <div class="floating-elements"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Us</h2>
+                <div class="about-content">
+                    <p>Pibble SMP is a friendly, creative world filled with kind players, talented builders, and fun events. Our staff are always active, our moderators are fair, and our players support each other. Whether you're building, exploring, or just chilling — you'll find your home here.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Section -->
+        <section id="join" class="section">
+            <div class="container">
+                <h2 class="section-title">Join the Adventure</h2>
+                <div class="join-content">
+                    <div class="server-info">
+                        <div class="server-ip-display">
+                            <span class="ip-label">Server IP:</span>
+                            <code class="server-ip">pibble.usga.me</code>
+                            <button class="btn btn-emerald" onclick="copyIP()">Copy IP</button>
+                        </div>
+                        <div class="discord-invite">
+                            <span class="invite-label">Discord:</span>
+                            <code class="discord-link">discord.gg/tQU3R4sSDS</code>
+                            <button class="btn btn-pink" onclick="window.open('https://discord.gg/tQU3R4sSDS', '_blank')">Join Discord</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section id="community" class="section">
+            <div class="container">
+                <h2 class="section-title">Community</h2>
+                <div class="community-info-box">
+                    <p>Our Discord community is full of friendly players, creative builders, and amazing moderators. Join us to chat, share builds, and take part in events — everyone’s welcome!</p>
+                    <button class="btn btn-pink" onclick="window.open('https://discord.gg/tQU3R4sSDS', '_blank')">Join Discord</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rules Section -->
+        <section id="rules" class="section">
+            <div class="container">
+                <h2 class="section-title">Server Rules</h2>
+                <div class="rules-content">
+                    <div class="rules-book">
+                        <div class="rule-item">
+                            <span class="rule-icon">📜</span>
+                            <div class="rule-text">
+                                <h3>Be Respectful</h3>
+                                <p>Treat all players with kindness and respect.</p>
+                            </div>
+                        </div>
+                        <div class="rule-item">
+                            <span class="rule-icon">🏗️</span>
+                            <div class="rule-text">
+                                <h3>No Griefing</h3>
+                                <p>Do not destroy or steal from other players' builds.</p>
+                            </div>
+                        </div>
+                        <div class="rule-item">
+                            <span class="rule-icon">💬</span>
+                            <div class="rule-text">
+                                <h3>Keep it Clean</h3>
+                                <p>Use appropriate language in chat and builds.</p>
+                            </div>
+                        </div>
+                        <div class="rule-item">
+                            <span class="rule-icon">🤝</span>
+                            <div class="rule-text">
+                                <h3>Help Others</h3>
+                                <p>Contribute positively to the community.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Status Section -->
+        <section id="status" class="section">
+            <div class="container">
+                <h2 class="section-title">Server Status</h2>
+                <div class="status-card">
+                    <div class="status-indicator">
+                        <span class="status-dot online"></span>
+                        <span class="status-text">Online - 12 players</span>
+                    </div>
+                    <p class="status-desc">Server is running smoothly. Join the adventure!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-gradient"></div>
+            <p>&copy; 2025 Pibble SMP — Built with ❤️ by Lazo;)</p>
+            <div class="footer-links">
+                <a href="https://discord.gg/tQU3R4sSDS" target="_blank">Discord</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cursor Trail -->
+    <div class="cursor-trail"></div>
+
+    <!-- Fog Overlay -->
+    <div class="fog-overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

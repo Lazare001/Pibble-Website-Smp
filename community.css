@@ -1,0 +1,174 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(45deg, #00ffcc, #ff33cc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 30px rgba(0, 255, 204, 0.5);
+}
+
+.subtitle {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 2rem;
+}
+
+/* Leaderboard */
+.leaderboard {
+    max-height: 70vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 50px rgba(0, 255, 204, 0.1);
+}
+
+/* Custom Scrollbar */
+.leaderboard::-webkit-scrollbar {
+    width: 12px;
+}
+
+.leaderboard::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.leaderboard::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #00ffcc, #ff33cc);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+}
+
+.leaderboard::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #66ff9f, #ff8fd3);
+}
+
+/* Role Cards */
+.role-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.role-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.role-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 15px currentColor;
+    transition: text-shadow 0.3s ease;
+}
+
+.owner .role-title { color: #ffcc00; }
+.admin .role-title { color: #ff4d4d; }
+.mod .role-title { color: #00ccff; }
+.member .role-title { color: #00ff99; }
+.visitor .role-title { color: #cccccc; }
+
+.member-list {
+    list-style: none;
+    text-align: left;
+}
+
+.member-list li {
+    padding: 0.5rem 0;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.member-list li:last-child {
+    border-bottom: none;
+}
+
+/* Glow Pulse Animation */
+.glow-pulse {
+    animation: glowPulse 3s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+    0%, 100% {
+        text-shadow: 0 0 15px currentColor, 0 0 30px currentColor;
+    }
+    50% {
+        text-shadow: 0 0 25px currentColor, 0 0 50px currentColor, 0 0 75px currentColor;
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 0.7rem;
+    }
+
+    .role-card {
+        padding: 1rem;
+    }
+
+    .role-title {
+        font-size: 1rem;
+    }
+
+    .member-list li {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .leaderboard {
+        max-height: 60vh;
+        gap: 1rem;
+    }
+
+    .role-card {
+        padding: 0.8rem;
+    }
+}
